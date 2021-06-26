@@ -9,7 +9,7 @@
     margin: 0;
     padding: 0;
     font-family: sans-serif;
-    background: linear-gradient(to right, #b92b27, #1565c0)
+    background-color: wheat;
 }
 
 .box {
@@ -88,8 +88,10 @@
 
                      {% render_field form.username class="form-control" placeholder="Username" %}
                      {% render_field form.password class="form-control" placeholder="Password" %}
-
+                            <!--                            
                      <input type="submit" name="" value="Login">
+                     -->
+                     <input type="button" onclick="location.href='http://127.0.0.1:5500/templates/student/student_dashboard.html';" value="Login" />
 
                 </form>
             </div>
