@@ -1,28 +1,79 @@
 <!DOCTYPE html>
 {% load static %}
 <html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    </head>
+  <style type="text/css">
+    .bs-example {
+      margin: 0px;
 
+    }
+    .bg-dark {
+    background-color: #212529!important;
+}
+    .navbar-brand {
+      font-size: 20px;
+      font-family: sans-serif;
+
+    }
+  </style>
 <style>
   .jumbotron{
     margin-bottom: 0px;
   }
 </style>
 <body>
-  {% include "quiz/navbar.html" %}
+  <div class="bs-example">
+    <nav class="navbar navbar-expand-md  navbar-dark fixed-top" style="background-color: #000000;">
+    
+      <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+        <div class="navbar-nav">
+          <a style="
+          padding-left: 30px;
+      " href="/" class="nav-item nav-link active">Home</a>
+
+          
+          <a href="/templates/student/studentclick.html" class="nav-item nav-link">Student</a>
+          <a href="/templates/quiz/adminlogin.html" class="nav-item nav-link">Teacher</a>
+
+
+        </div>
+
+        
+
+
+
+
+      </div>
+    </nav>
+  </div>
+
+
 <br>
 <section id="section-jumbotron" class="jumbotron jumbotron-fluid d-flex justify-content-center align-items-center">
   <div class="container text-center">
     <h1 class="display-1 text-info">Navigus Assignment</h1>
-    <p class="display-4 d-none d-sm-block">Go to your respective tab if you are a User.</p>
-   
+    <p class="display-4 d-none d-sm-block">Go to student tab if you are a student and want to access a quiz and login.</p>
+    <p class="lead">Go to teacher tab if you are a teacher.</p>
 
     
 
+    <p class="lead">Sign up first if you are a student.</p>
    
+    <a href="/templates/student/studentsignup.html" class="btn btn-lg btn-info" style="padding-right: 35px;"> Sign Up</a>
+    
     <br><br><br>
   </div>  
 </section>
-
 
 
 </body>
